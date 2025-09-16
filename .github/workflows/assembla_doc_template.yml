@@ -86,7 +86,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: progetto
-        path: "pages_artifact/*.pdf"
+        path: "pages_artifact/${{ env.PDF_NAME }}"
         overwrite: true
         
     - name: Commit del documento assemblato

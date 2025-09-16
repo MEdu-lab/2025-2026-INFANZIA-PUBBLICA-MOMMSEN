@@ -32,33 +32,23 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/kjarosh/latex:2025.1-small
-      #image: ghcr.io/kjarosh/latex:2024.4-full
 
     steps:
-    - name: Install git
-      run: apk add --no-cache git
-
+    - name: Install dependencies (missing LaTeX packages )
+      run: |
+        apk add --no-cache git python3 py3-pip bash pandoc tar
+        pip install --break-system-packages pyyaml python-liquid
+        tlmgr install preprint
+        
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Install missing LaTeX packages     
-      run: |
-        tlmgr install preprint
-
-    - name: Install Python + deps
-      run: |
-        apk add --no-cache python3 py3-pip bash git
-        pip install --break-system-packages pyyaml python-liquid 
-
     - name: Processa i template con Python
       run: |
         rm -f README.md *.pdf
         python3 .github/scripts/process-template.py
-
-    - name: Install Pandoc
-      run: apk add --no-cache pandoc
 
     - name: Genera il PDF con Pandoc
       run: |
@@ -75,7 +65,6 @@ jobs:
 
     - name: Install GNU tar e Preparare PDF per Pages
       run: |
-        apk add --no-cache tar
         mkdir -p pages_artifact
         cp "${PDF_NAME}" pages_artifact/latest.pdf
 

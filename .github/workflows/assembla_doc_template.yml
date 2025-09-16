@@ -65,7 +65,8 @@ jobs:
         TITLE=$(sed -n '/^---$/,/^---$/p' README.md | grep '^title:' | head -n1 | sed 's/title:[[:space:]]*//; s/^ *//; s/ *$//; s/[*]//g')
         SAFE_TITLE=$(echo "$TITLE" | tr ' ' '_' | tr -cd '[:alnum:]_')
         TIMESTAMP=$(date +%Y%m%d%H%M%S)
-        PDF_NAME="${SAFE_TITLE}-${TIMESTAMP}.pdf"
+        #PDF_NAME="${SAFE_TITLE}-${TIMESTAMP}.pdf"
+        PDF_NAME="${SAFE_TITLE}-MEduLab-${TIMESTAMP}.pdf"
         echo "Generazione PDF: $PDF_NAME"
         pandoc README.md -o "$PDF_NAME" \
           --pdf-engine=xelatex \

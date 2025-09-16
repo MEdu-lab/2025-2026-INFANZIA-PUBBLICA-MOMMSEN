@@ -45,13 +45,10 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Processa i template con Python
+    - name: Processa i template con Python  e Genera il PDF con Pandoc
       run: |
         rm -f README.md *.pdf
         python3 .github/scripts/process-template.py
-
-    - name: Genera il PDF con Pandoc
-      run: |
         TITLE=$(sed -n '/^---$/,/^---$/p' README.md | grep '^title:' | head -n1 | sed 's/title:[[:space:]]*//; s/^ *//; s/ *$//; s/[*]//g')
         SAFE_TITLE=$(echo "$TITLE" | tr ' ' '_' | tr -cd '[:alnum:]_')
         TIMESTAMP=$(date +%Y%m%d%H%M%S)
@@ -62,9 +59,6 @@ jobs:
           --pdf-engine=xelatex \
           --template=styles/customPandoc.latex
         echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
-
-    - name: Install GNU tar e Preparare PDF per Pages
-      run: |
         mkdir -p pages_artifact
         cp "${PDF_NAME}" pages_artifact/latest.pdf
 
@@ -95,6 +89,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
+        
   deploy:
     needs: build
     runs-on: ubuntu-latest

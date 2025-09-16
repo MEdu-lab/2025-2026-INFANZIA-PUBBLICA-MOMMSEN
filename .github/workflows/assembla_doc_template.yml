@@ -56,7 +56,7 @@ jobs:
         PDF_NAME="${SAFE_TITLE}-MEduLab-${TIMESTAMP}.pdf"
         echo "Generazione PDF: $PDF_NAME"
         pandoc README.md -o "$PDF_NAME" \
-          --pdf-engine=xelatex \
+          --pdf-engine=pdflatex \
           --template=styles/customPandoc.latex
         echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
         mkdir -p pages_artifact

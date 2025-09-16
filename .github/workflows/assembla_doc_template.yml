@@ -76,19 +76,19 @@ jobs:
       run: |
         apk add --no-cache tar
         mkdir -p pages_artifact
-        mv "${PDF_NAME}" pages_artifact/
+        cp "${PDF_NAME}" pages_artifact/latest.pdf
 
+    - uses: actions/upload-artifact@v4
+      with:
+        name: progetto
+        path: "${{ env.PDF_NAME }}"
+        overwrite: true
+        
     - name: Upload artifact per Pages
       uses: actions/upload-pages-artifact@v3
       with:
         path: pages_artifact
 
-    - uses: actions/upload-artifact@v4
-      with:
-        name: progetto
-        path: "pages_artifact/${{ env.PDF_NAME }}"
-        overwrite: true
-        
     - name: Commit del documento assemblato
       run: |
         cd "$GITHUB_WORKSPACE"

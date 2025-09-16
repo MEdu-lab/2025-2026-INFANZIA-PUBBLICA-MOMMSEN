@@ -62,7 +62,7 @@ jobs:
         echo "Generazione PDF: $SAFE_TITLE.pdf"
         pandoc README.md -o "$SAFE_TITLE.pdf" \
           --pdf-engine=xelatex \
-          --template=customPandoc.latex 
+          --template=styles/customPandoc.latex 
 
     - uses: actions/upload-artifact@v4
       with:

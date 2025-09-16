@@ -59,10 +59,18 @@ jobs:
       run: |
         TITLE=$(sed -n '/^---$/,/^---$/p' README.md | grep '^title:' | head -n1 | sed 's/title:[[:space:]]*//; s/^ *//; s/ *$//; s/[*]//g')
         SAFE_TITLE=$(echo "$TITLE" | tr ' ' '_' | tr -cd '[:alnum:]_')
-        echo "Generazione PDF: $SAFE_TITLE.pdf"
-        pandoc README.md -o "$SAFE_TITLE.pdf" \
+        TIMESTAMP=$(date +%Y%m%d%H%M%S)
+        PDF_NAME="${SAFE_TITLE}-${TIMESTAMP}.pdf"
+        echo "Generazione PDF: $PDF_NAME"
+        pandoc README.md -o "$PDF_NAME" \
           --pdf-engine=xelatex \
-          --template=styles/customPandoc.latex 
+          --template=styles/customPandoc.latex
+        echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
+
+    - name: Upload artifact per Pages
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ${{ env.PDF_NAME }}   # il PDF generato con timestamp
 
     - uses: actions/upload-artifact@v4
       with:
@@ -86,3 +94,9 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy su GitHub Pages
+        uses: actions/deploy-pages@v4

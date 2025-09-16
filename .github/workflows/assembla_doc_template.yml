@@ -64,21 +64,22 @@ jobs:
           --pdf-engine=xelatex \
           --template=customPandoc.latex 
 
+    - uses: actions/upload-artifact@v4
+      with:
+        name: progetto
+        path: "*.pdf"
+        overwrite: true
+        
     - name: Commit del documento assemblato
       run: |
         cd "$GITHUB_WORKSPACE"
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
+        rm -f *.pdf
         git add -u
         git add README.md
         git diff --staged --quiet || git commit -m "Auto-aggiornamento documento con template [skip ci]"
-
-    - uses: actions/upload-artifact@v4
-      with:
-        name: progetto
-        path: "*.pdf"
-        overwrite: true
         
     - name: Push delle modifiche
       uses: ad-m/github-push-action@master

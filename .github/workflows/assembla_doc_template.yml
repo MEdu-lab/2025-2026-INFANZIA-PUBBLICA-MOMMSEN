@@ -4,7 +4,7 @@ name: Assembla Documento con Template
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main , dev]
     paths: 
       - 'docs/sezioni/**'
       - 'config.yml'

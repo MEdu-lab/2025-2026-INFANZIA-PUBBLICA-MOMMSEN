@@ -64,7 +64,7 @@ jobs:
     
     - uses: actions/upload-artifact@v4
       with:
-        name: progetto-completo_pdf
+        name: "${PDF_NAME}"
         path: "${{ env.PDF_NAME }}"
         overwrite: true
         

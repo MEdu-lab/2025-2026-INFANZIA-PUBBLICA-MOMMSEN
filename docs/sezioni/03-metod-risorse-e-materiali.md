@@ -6,8 +6,11 @@ Le attività vengono progettate attorno a *scoperte sonore*. In questo stadio, i
 Parallelamente progettiamo le pratiche collettive tenendo conto delle esigenze emerse per facilitare l'inclusività di tutti i partecipanti.
 
 Le attività si articolano su tre dimensioni:
-- **Esplorazione sonora e corporea**: utilizzo di oggetti quotidiani, scoperta delle sonorità del corpo (body percussion) e uso di strumenti semplici e sicuri.    
-- **Linguaggio e movimento**: coordinazione gesto-suono, imitazione di suoni ambientali e giochi legati a storie musicali.    
+
+- **Esplorazione sonora e corporea**: utilizzo di oggetti quotidiani, scoperta delle sonorità del corpo (body percussion) e uso di strumenti semplici e sicuri.
+
+- **Linguaggio e movimento**: coordinazione gesto-suono, imitazione di suoni ambientali e giochi legati a storie musicali.
+  
 - **Ascolto attivo e dimensione collettiva**: improvvisazione in piccoli gruppi, giochi di direzione d'orchestra e attività focalizzate sul silenzio e l'ascolto dell'ambiente.
 
 

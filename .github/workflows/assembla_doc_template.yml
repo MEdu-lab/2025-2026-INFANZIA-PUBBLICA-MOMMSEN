@@ -4,7 +4,7 @@ name: Assembla Documento con Template
 
 on:
   push:
-    branches: [ main , dev]
+    branches: [ main, dev ]
     paths: 
       - 'docs/sezioni/**'
       - 'config.yml'
@@ -13,9 +13,8 @@ on:
       - 'styles/**'
       - '*.tex'
       - 'customPandoc.latex'
-      
   pull_request:
-    branches: [ main ]
+    branches: [ main, dev ]
     paths:
       - 'docs/sezioni/**'
       - 'config.yml'
@@ -34,7 +33,7 @@ jobs:
       image: ghcr.io/kjarosh/latex:2025.1-basic
 
     steps:
-    - name: Install dependencies (missing LaTeX packages )
+    - name: Install dependencies (missing LaTeX packages)
       run: |
         apk add --no-cache git python3 py3-pip bash pandoc tar
         pip install --break-system-packages pyyaml python-liquid
@@ -45,33 +44,35 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Processa i template con Python  e Genera il PDF con Pandoc
+    - name: Processa i template con Python e genera il PDF con Pandoc
       run: |
         rm -f README.md *.pdf
         python3 .github/scripts/process-template.py
         TITLE=$(sed -n '/^---$/,/^---$/p' README.md | grep '^title:' | head -n1 | sed 's/title:[[:space:]]*//; s/^ *//; s/ *$//; s/[*]//g')
         SAFE_TITLE=$(echo "$TITLE" | tr ' ' '_' | tr -cd '[:alnum:]_')
         TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-        #PDF_NAME="${SAFE_TITLE}-${TIMESTAMP}.pdf"
         PDF_NAME="${SAFE_TITLE}-MEduLab-${TIMESTAMP}.pdf"
         echo "Generazione PDF: $PDF_NAME"
         pandoc README.md -o "$PDF_NAME" \
           --pdf-engine=pdflatex \
           --template=styles/customPandoc.latex
         echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
+        
+        # Prepara la cartella per Pages
         mkdir -p pages_artifact
-        cp "${PDF_NAME}" pages_artifact/latest.pdf
+        if [[ "${GITHUB_REF_NAME}" == "dev" ]]; then
+          mkdir -p pages_artifact/dev
+          cp "$PDF_NAME" pages_artifact/dev/latest.pdf
+        else
+          cp "$PDF_NAME" pages_artifact/latest.pdf
+        fi
+
     - uses: actions/upload-artifact@v4
       with:
         name: progetto-completo_pdf
         path: "${{ env.PDF_NAME }}"
         overwrite: true
         
-    - name: Upload artifact per Pages
-      uses: actions/upload-pages-artifact@v4
-      with:
-        path: pages_artifact
-
     - name: Commit del documento assemblato
       run: |
         cd "$GITHUB_WORKSPACE"
@@ -87,7 +88,7 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+        branch: ${{ github.ref_name }}
         
   deploy:
     needs: build
@@ -95,3 +96,5 @@ jobs:
     steps:
       - name: Deploy su GitHub Pages
         uses: actions/deploy-pages@v4
+        with:
+          folder: pages_artifact

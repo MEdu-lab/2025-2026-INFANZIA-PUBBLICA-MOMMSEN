@@ -3,7 +3,7 @@ author: ' '
 documentclass: article
 header-includes:
 - \usepackage{styles/mystyle}
-- \newcommand{\gruppo}{MEduLab}
+- \newcommand{\gruppo}{A cura di MEduLab}
 - "\\newcommand{\\authorlist}{\\begin{minipage}{0.3\\textwidth}\n        \\centering\n\
   \        \\textbf{Pietro Barale}\\\\\\textit{operatore}\\\\\\textit{diplomato in\
   \ Musica Applicata alle immagini, Conservatorio di Santa Cecilia, Roma}\n      \\\
@@ -13,11 +13,16 @@ header-includes:
   hfill\\begin{minipage}{0.3\\textwidth}\n        \\centering\n        \\textbf{Marco\
   \ Di Gasbarro}\\\\\\textit{coordinatore}\\\\\\textit{dottorando in Composizione\
   \ e Performance Musicale, Conservatorio di Ferrara}\n      \\end{minipage}}"
-subtitle: Scuola dell'Infanzia *Salvatore Quasimodo* - 2025/2026
+subtitle: Proposta di laboratorio extracurriculare per la Scuola dell'Infanzia Salvatore
+  Quasimodo - A.S. 2025/2026 - 2025/2026
 title: Piccoli esploratori sonori
 ---
 
-Vi proponiamo il laboratorio di musica d'insieme per l'infanzia, un corso extracurriculare pomeridiano aperto alle bambine e ai bambini che frequentano la scuola Scuola dell'Infanzia *Salvatore Quasimodo*. Il laboratorio nasce da un progetto sviluppato e perfezionato in quattro anni di docenza e ricerca didattica sperimentale. È condotto da musicisti formati nella pratica della musica contemporanea, elettroacustica e popolare, e ha l’obiettivo di offrire ai bambini un’esperienza leggera ma significativa. Nella progettazione di esperienze di musica d’insieme, cerchiamo di accendere l’interesse dei bambini, puntando a integrare alcune istanze della musica di ricerca, su cui lavoriamo in collaborazione con importanti Conservatori italiani. L’obiettivo del corso è imparare ad ascoltare sé stessi e gli altri mentre si canta, si suona e ci si muove all’interno di un gruppo, in cui la partecipazione attiva è un fine in sé e la sperimentazione rappresenta la principale motivazione.
+Vi proponiamo il laboratorio di musica d'insieme per l'infanzia, un corso extracurriculare pomeridiano aperto alle bambine e ai bambini che frequentano la scuola Proposta di laboratorio extracurriculare per la Scuola dell'Infanzia Salvatore Quasimodo - A.S. 2025/2026. Il laboratorio nasce da un progetto sviluppato in quattro anni di ricerca didattica. Condotto da musicisti esperti in repertorio contemporaneo, elettroacustico e popolare, mira a creare un'esperienza per i bambini che sia giocosa e, al tempo stesso, profondamente significativa.
+
+Progettiamo esperienze musicali che stimolano la curiosità dei bambini, traendo ispirazione dalla musica contemporanea e di ricerca che sviluppiamo in collaborazione con importanti Conservatori italiani.
+
+L’obiettivo del corso è imparare ad ascoltare sé stessi e gli altri mentre si canta, si suona e ci si muove all’interno di un gruppo, in cui la **partecipazione attiva** è un fine in sé e la sperimentazione rappresenta la principale motivazione.
 
 \vspace{.7cm}
 
@@ -59,10 +64,9 @@ Le attività vengono progettate attorno a *scoperte sonore*. In questo stadio, i
 Parallelamente progettiamo le pratiche collettive tenendo conto delle esigenze emerse per facilitare l'inclusività di tutti i partecipanti.
 
 Le attività si articolano su tre dimensioni:
-- la dimensione dell’esplorazione sonora libera: uso di oggetti quotidiani per creare suoni (pentole, contenitori, materiali naturali), scoperta delle sonorità del corpo (battito di mani, piedi, voce in diverse modalità) e utilizzo di strumenti semplici e sicuri (maracas, tamburelli, legnetti, campane).
-- la dimensione del linguaggio e il movimento: coordinazione gesto-suono (battere il ritmo mentre si articolano semplici sillabe), imitazione di suoni ambientali e giochi legati a storie musicali inventate.
-- la dimensione dell'ascolto attivo e alla dimensione collettiva: Costruzione di piccoli gruppi di improvvisazione musicale, giochi di simulazione di direzione d'orchestra a turno, discriminazione di altezze, timbri, dinamiche e giochi che valorizzano il silenzio e l'ascolto dell'ambiente circostante.
-
+- **Esplorazione sonora e corporea**: utilizzo di oggetti quotidiani, scoperta delle sonorità del corpo (body percussion) e uso di strumenti semplici e sicuri.    
+- **Linguaggio e movimento**: coordinazione gesto-suono, imitazione di suoni ambientali e giochi legati a storie musicali.    
+- **Ascolto attivo e dimensione collettiva**: improvvisazione in piccoli gruppi, giochi di direzione d'orchestra e attività focalizzate sul silenzio e l'ascolto dell'ambiente.
 
 
 **Materiali forniti durante il corso:**  

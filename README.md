@@ -46,7 +46,6 @@ L’obiettivo del corso è imparare ad ascoltare sé stessi e gli altri mentre s
 La nostra esperienza basata sui corsi svolti fino ad ora è stata di 8-12 partecipanti. Il riscontro per noi più prezioso è arrivato dalle famiglie, che ci hanno riportato come i bambini hanno interiorizzato l'esperienza vissuta riproponendo spontaneamente a casa le attività svolte: ad esempio esplorare le sonorità dell' ambiente circostante, vocalizzare i suoni delle percussioni e trasformare oggetti quotidiani in strumenti musicali.
 Ogni anno intendiamo consolidare l'approccio intrapreso, personalizzando il metodo progettato per adattarlo alle specificità di ogni bambino, concentrandoci sulle diverse modalità di apprendimento e supportando chi incontra particolari sfide nello svolgimento delle attività musicali.     
 
-\vspace{2cm}
 
 **Obiettivi specifici:**    
 - Sviluppare la capacità di ascolto attivo e l'invenzione sonora  
@@ -64,8 +63,11 @@ Le attività vengono progettate attorno a *scoperte sonore*. In questo stadio, i
 Parallelamente progettiamo le pratiche collettive tenendo conto delle esigenze emerse per facilitare l'inclusività di tutti i partecipanti.
 
 Le attività si articolano su tre dimensioni:
-- **Esplorazione sonora e corporea**: utilizzo di oggetti quotidiani, scoperta delle sonorità del corpo (body percussion) e uso di strumenti semplici e sicuri.    
-- **Linguaggio e movimento**: coordinazione gesto-suono, imitazione di suoni ambientali e giochi legati a storie musicali.    
+
+- **Esplorazione sonora e corporea**: utilizzo di oggetti quotidiani, scoperta delle sonorità del corpo (body percussion) e uso di strumenti semplici e sicuri.
+
+- **Linguaggio e movimento**: coordinazione gesto-suono, imitazione di suoni ambientali e giochi legati a storie musicali.
+  
 - **Ascolto attivo e dimensione collettiva**: improvvisazione in piccoli gruppi, giochi di direzione d'orchestra e attività focalizzate sul silenzio e l'ascolto dell'ambiente.
 
 

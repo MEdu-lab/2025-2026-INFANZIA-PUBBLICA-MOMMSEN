@@ -69,10 +69,10 @@ jobs:
 
       - name: Commit del documento aggiornato
         run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          cd "$GITHUB_WORKSPACE"   # garantisce di essere nella root del repo
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-
+      
           rm -f *.pdf
           git add -u
           git add README.md

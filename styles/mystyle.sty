@@ -38,12 +38,12 @@
   \vspace*{-\topsep}
   \begin{center}%
     {\Huge \@title \par}%
-    \vskip 1em%
+    %\vskip 1em%
     % Sottotitolo se presente
     \@ifundefined{@subtitle}{}{{\large \@subtitle \par}\vskip 1.5em}%
     % Gruppo se presente
     \def\temp{\gruppo}%
-    \ifx\temp\empty\else{\large\bfseries \gruppo \par}\vskip 1.5em\fi
+    \ifx\temp\empty\else{\large\bfseries \gruppo \par}\vskip 1em\fi
     % Lista degli autori con nome, ruolo e qualifica
     \authorlist
     \vskip 1.5em%

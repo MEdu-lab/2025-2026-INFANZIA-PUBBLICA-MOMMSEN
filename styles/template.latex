@@ -224,7 +224,7 @@ $endif$
 \usepackage{calc} % for calculating minipage widths
 
 % Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
+\Requirepackage{etoolbox}
 \makeatletter
 \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
 \makeatother
@@ -408,24 +408,117 @@ $header-includes$
 $endfor$
 
 % +----------------------------------+
-% | BIBLIOGRAFIA (NATBIB)            |
+% | CUSTOM PROJECT STYLING           |
 % +----------------------------------+
 
-$if(natbib)$
-\usepackage[$natbiboptions$]{natbib}
-\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+% Pacchetti necessari
+\usepackage{etoolbox}
+\usepackage[hmargin=2cm, vmargin=2.5cm]{geometry}
+
+% Title formatting
+\usepackage{titlesec}
+\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\normalfont\Large\bfseries\centering}{}{1em}{}
+
+% Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small \textcopyright\ 2025 MEduLab. Tutti i diritti riservati.}
+\renewcommand{\headrulewidth}{0pt}
+
+% List spacing
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt, topsep=0pt}
+
+
+% +----------------------------------+
+% | GRUPPO                           |
+% +----------------------------------+
+
+$if(gruppo)$
+\newcommand{\gruppo}{$gruppo$}
+$else$
+\newcommand{\gruppo}{}
 $endif$
 
 % +----------------------------------+
-% | BIBLIOGRAFIA (BIBLATEX)          |
+% | MAESTRI                          |
 % +----------------------------------+
 
-$if(biblatex)$
-\usepackage[$if(biblio-style)$style=$biblio-style$,$endif$$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex}
-$for(bibliography)$
-\addbibresource{$bibliography$}
+$if(maestri)$
+% Calcola width direttamente in LaTeX
+\makeatletter
+\newcount\maestricount
+\maestricount=0
+$for(maestri)$
+\advance\maestricount by 1
 $endfor$
+\ifnum\maestricount>2
+  \newcommand{\maestriwidth}{0.3}
+\else
+  \newcommand{\maestriwidth}{0.45}
+\fi
+\makeatother
+$else$
+\newcommand{\maestriwidth}{0.45}
 $endif$
+
+% +----------------------------------+
+% | TITOLO E MAKETITLE               |
+% +----------------------------------+
+
+$if(title)$
+\title{$title$}
+$endif$
+
+
+% Ridefinizione di \@maketitle
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \newpage
+  \null
+  \vspace*{-\topskip}
+  \vspace*{-\topsep}
+  \begin{center}%
+    % Titolo
+    $if(title)$
+    {\Huge \@title \par}%
+    \vskip 0.5em%
+    $endif$
+    
+    % Sottotitolo
+    $if(subtitle)$
+    {\large $subtitle$ \par}%
+    \vskip 1em%
+    $endif$
+    
+    % Gruppo (usa il comando definito in header-includes)
+    \def\temp{\gruppo}%
+    \ifx\temp\empty\else
+      {\large\bfseries \gruppo \par}%
+      \vskip 0.8em%
+    \fi
+    
+    % Maestri - usa sia variabile Pandoc che comando LaTeX
+    $if(maestri)$
+    $for(maestri)$%
+    \begin{minipage}{\maestriwidth\textwidth}
+      \centering
+      \textbf{$maestri.nome$}%
+      $if(maestri.ruolo)$\\[0.2em]\textit{$maestri.ruolo$}$endif$%
+      $if(maestri.qualifica)$\\[0.2em]\textit{$maestri.qualifica$}$endif$
+    \end{minipage}%
+    $sep$\hfill%
+    $endfor$
+    \par
+    \vskip 1.5em%
+    $endif$
+    
+  \end{center}%
+  \par
+}
+\makeatother
 
 % +----------------------------------+
 % | NOCITE IDS                       |
@@ -494,50 +587,7 @@ $endif$
 $endif$
   pdfcreator={LaTeX via pandoc}}
 
-% +----------------------------------+
-% | TITOLO                           |
-% +----------------------------------+
 
-$if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
-$endif$
-
-% +----------------------------------+
-% | SOTTOTITOLO                      |
-% +----------------------------------+
-
-$if(subtitle)$
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-\subtitle{$subtitle$}
-$endif$
-
-% +----------------------------------+
-% | AUTORI                           |
-% +----------------------------------+
-
-\author{%
-$for(author)$
-$if(author.name)$
-\textbf{$author.name$}%
-$if(author.affiliation)$ \\ \textit{$author.affiliation$}%
-$endif$
-$else$
-$author$%
-$endif$
-$sep$\and
-$endfor$
-}
-
-% +----------------------------------+
-% | DATA                             |
-% +----------------------------------+
-
-\date{$date$}
 
 % ============================================================================
 % INIZIO DOCUMENTO

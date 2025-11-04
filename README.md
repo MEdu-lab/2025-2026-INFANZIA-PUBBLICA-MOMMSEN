@@ -1,18 +1,18 @@
 ---
-author: ' '
 documentclass: article
-header-includes:
-- \usepackage{styles/mystyle}
-- \newcommand{\gruppo}{A cura di MEduLab}
-- "\\newcommand{\\authorlist}{\\begin{minipage}{0.3\\textwidth}\n        \\centering\n\
-  \        \\textbf{Pietro Barale}\\\\\\textit{operatore}\\\\\\textit{diplomato in\
-  \ Musica Applicata alle immagini, Conservatorio di Santa Cecilia, Roma}\n      \\\
-  end{minipage}\\hfill\\begin{minipage}{0.3\\textwidth}\n        \\centering\n   \
-  \     \\textbf{Giulio Romano De Mattia}\\\\\\textit{operatore}\\\\\\textit{ diplomato\
-  \ in Musica Elettronica, Conservatorio di Santa Cecilia, Roma}\n      \\end{minipage}\\\
-  hfill\\begin{minipage}{0.3\\textwidth}\n        \\centering\n        \\textbf{Marco\
-  \ Di Gasbarro}\\\\\\textit{coordinatore}\\\\\\textit{dottorando in Composizione\
-  \ e Performance Musicale, Conservatorio di Ferrara}\n      \\end{minipage}}"
+gruppo: A cura di MEduLab
+maestri:
+- nome: Pietro Barale
+  qualifica: diplomato in Musica Applicata alle immagini, Conservatorio di Santa Cecilia,
+    Roma
+  ruolo: operatore
+- nome: Giulio Romano De Mattia
+  qualifica: ' diplomato in Musica Elettronica, Conservatorio di Santa Cecilia, Roma'
+  ruolo: operatore
+- nome: Marco Di Gasbarro
+  qualifica: dottorando in Composizione e Performance Musicale, Conservatorio di Ferrara
+  ruolo: coordinatore
+maestri-width: '0.3'
 subtitle: Proposta di laboratorio extracurriculare per la Scuola dell'Infanzia Salvatore
   Quasimodo - 2025/2026
 title: Piccoli esploratori sonori

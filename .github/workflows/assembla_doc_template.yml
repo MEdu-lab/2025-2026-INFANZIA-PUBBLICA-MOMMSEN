@@ -69,7 +69,7 @@ jobs:
 
       - name: Commit del documento aggiornato
         run: |
-          cd "$GITHUB_WORKSPACE"   # garantisce di essere nella root del repo
+          cd "$GITHUB_WORKSPACE"   --add safe.directory "$GITHUB_WORKSPACE"
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
       

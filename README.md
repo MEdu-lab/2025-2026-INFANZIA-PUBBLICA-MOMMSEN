@@ -3,7 +3,7 @@ author: ' '
 documentclass: article
 header-includes:
 - \usepackage{styles/mystyle}
-- \newcommand{\gruppo}{MEduLab}
+- \newcommand{\gruppo}{A cura di **MEduLab**}
 - "\\newcommand{\\authorlist}{\\begin{minipage}{0.3\\textwidth}\n        \\centering\n\
   \        \\textbf{Pietro Barale}\\\\\\textit{operatore}\\\\\\textit{diplomato in\
   \ Musica Applicata alle immagini, Conservatorio di Santa Cecilia, Roma}\n      \\\
@@ -13,11 +13,12 @@ header-includes:
   hfill\\begin{minipage}{0.3\\textwidth}\n        \\centering\n        \\textbf{Marco\
   \ Di Gasbarro}\\\\\\textit{coordinatore}\\\\\\textit{dottorando in Composizione\
   \ e Performance Musicale, Conservatorio di Ferrara}\n      \\end{minipage}}"
-subtitle: Scuola dell'Infanzia *Salvatore Quasimodo* - 2025/2026
+subtitle: Proposta di laboratorio extracurriculare per la Scuola dell'Infanzia Salvatore
+  Quasimodo - A.S. 2025/2026 - 2025/2026
 title: Piccoli esploratori sonori
 ---
 
-Vi proponiamo un corso extracurricolare pomeridiano di musica d’insieme, aperto alle bambine e ai bambini che frequentano la Scuola dell'Infanzia *Salvatore Quasimodo*.
+Vi proponiamo un corso extracurricolare pomeridiano di musica d’insieme, aperto alle bambine e ai bambini che frequentano la Scuola dell'Infanzia Salvatore Quasimodo - A.S. 2025/2026.
 Il laboratorio nasce da un progetto maturato nel corso di quattro anni di ricerca didattica e viene condotto da musicisti esperti nei repertori contemporaneo, elettroacustico e popolare.
 L’iniziativa intende offrire ai bambini un’esperienza musicale che unisca il gioco alla scoperta creativa del suono, favorendo al tempo stesso l’ascolto reciproco, la collaborazione e l’espressione personale in un'esperienza profondamente **significativa**.
 

@@ -416,7 +416,7 @@ $endfor$
 \usepackage[hmargin=2cm, vmargin=2.5cm]{geometry}
 
 % Title formatting
-\usepackage{titlesec}
+\usepackage{styles/titlesec}
 \titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
 \titleformat{\subsection}[block]{\normalfont\Large\bfseries\centering}{}{1em}{}
 
@@ -428,7 +428,7 @@ $endfor$
 \renewcommand{\headrulewidth}{0pt}
 
 % List spacing
-\usepackage{enumitem}
+\usepackage{styles/enumitem}
 \setlist[itemize]{itemsep=0pt, topsep=0pt}
 
 

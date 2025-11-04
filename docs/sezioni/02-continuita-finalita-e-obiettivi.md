@@ -4,6 +4,7 @@ La nostra esperienza basata sui corsi svolti fino ad ora è stata di {{ corso.pa
 Ogni anno intendiamo consolidare l'approccio intrapreso, personalizzando il metodo progettato per **adattarlo alle specificità di ogni bambino**, concentrandoci sulle diverse modalità di apprendimento e supportando chi incontra particolari sfide nello svolgimento delle attività musicali.     
 
 
+
 **Obiettivi specifici:**    
 
 - Sviluppare la capacità di ascolto attivo e l'invenzione sonora

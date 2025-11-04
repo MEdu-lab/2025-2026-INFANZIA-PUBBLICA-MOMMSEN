@@ -90,10 +90,14 @@ Materiali forniti durante il corso:
   
 - Fogli e matite colorate  
 
-**Richieste alle famiglie:**  
-- *Calzini antiscivolo*  
-- *Una merenda semplice e pratica (con una bustina richiudibile)*  
-- *Una piccola borraccia o una bottiglietta o un bicchiere per l'acqua*  
+**Richieste alle famiglie:** 
+
+- *Calzini antiscivolo*
+  
+- *Una merenda semplice e pratica (con una bustina richiudibile)*
+  
+- *Una piccola borraccia o una bottiglietta o un bicchiere per l'acqua*
+  
 
 
 

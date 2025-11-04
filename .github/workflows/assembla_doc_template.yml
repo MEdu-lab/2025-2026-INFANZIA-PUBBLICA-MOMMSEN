@@ -57,7 +57,7 @@ jobs:
         echo "Generazione PDF: $PDF_NAME"
         pandoc README.md -o "$PDF_NAME" \
           --pdf-engine=pdflatex \
-          --template=styles/customPandoc.latex
+          --template=styles/template.latex
         echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
         mkdir -p pages_artifact
         cp "${PDF_NAME}" pages_artifact/latest.pdf

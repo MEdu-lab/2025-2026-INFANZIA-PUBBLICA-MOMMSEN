@@ -2,7 +2,7 @@
 \ProvidesPackage{mystyle}
 
 % Margini (usa il pacchetto geometry)
-\RequirePackage[hmargin=2cm, vmargin=2cm]{geometry}
+\RequirePackage[hmargin=2cm, vmargin=2.5cm]{geometry}
 
 % Dimensione del font
 \renewcommand\normalsize{\fontsize{11}{13}\selectfont}
@@ -34,6 +34,8 @@
 \renewcommand{\@maketitle}{%
   \newpage
   \null
+  \vspace*{-\topskip}
+  \vspace*{-\topsep}
   \begin{center}%
     {\Huge \@title \par}%
     \vskip 1em%

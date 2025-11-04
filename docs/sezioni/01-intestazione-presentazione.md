@@ -1,6 +1,8 @@
-Vi proponiamo il laboratorio di musica d'insieme per l'infanzia, un corso extracurriculare pomeridiano aperto alle bambine e ai bambini che frequentano la {{ progetto.sottotitolo }}. Il laboratorio nasce da un progetto sviluppato in quattro anni di ricerca didattica. Condotto da musicisti esperti in repertorio contemporaneo, elettroacustico e popolare, mira a creare un'esperienza per i bambini che sia giocosa e, al tempo stesso, profondamente significativa.
+Vi proponiamo un corso extracurricolare pomeridiano di musica d’insieme, aperto alle bambine e ai bambini che frequentano la {{ progetto.sottotitolo }}.
+Il laboratorio nasce da un progetto maturato nel corso di quattro anni di ricerca didattica e viene condotto da musicisti esperti nei repertori contemporaneo, elettroacustico e popolare.
+L’iniziativa intende offrire ai bambini un’esperienza musicale che unisca il gioco alla scoperta creativa del suono, favorendo al tempo stesso l’ascolto reciproco, la collaborazione e l’espressione personale in un'esperienza profondamente **significativa**.
 
-Progettiamo esperienze musicali che stimolano la curiosità dei bambini, traendo ispirazione dalla musica contemporanea e di ricerca che sviluppiamo in collaborazione con importanti Conservatori italiani.
+Progettiamo esperienze musicali che stimolano la curiosità e la creatività dei bambini, ispirandoci alla musica contemporanea e alle ricerche sonore sviluppate in collaborazione con istituzioni musicali di rilievo.
 
 L’obiettivo del corso è imparare ad ascoltare sé stessi e gli altri mentre si canta, si suona e ci si muove all’interno di un gruppo, in cui la **partecipazione attiva** è un fine in sé e la sperimentazione rappresenta la principale motivazione.
 

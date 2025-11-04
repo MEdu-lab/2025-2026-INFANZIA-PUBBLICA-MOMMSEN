@@ -84,7 +84,7 @@ Le attività si articolano su tre dimensioni:
 
 La filosofia del progetto prevede l'utilizzo creativo di materiali semplici e accessibili, trasformando l'ambiente e gli oggetti in opportunità di scoperta musicale. 
 
-Materiali forniti durante il corso:
+**Materiali forniti durante il corso:**
 
 - Strumenti musicali e oggetti comuni per l'esplorazione sonora
   

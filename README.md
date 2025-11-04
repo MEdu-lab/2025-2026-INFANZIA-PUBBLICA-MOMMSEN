@@ -26,10 +26,11 @@ Progettiamo esperienze musicali che stimolano la curiosità e la creatività dei
 
 L’obiettivo del corso è imparare ad ascoltare sé stessi e gli altri mentre si canta, si suona e ci si muove all’interno di un gruppo, in cui la **partecipazione attiva** è un fine in sé e la sperimentazione rappresenta la principale motivazione.
 
-\vspace{.7cm}
+\vspace{.2cm}
 
 >*il ritmo si può solo liberare, sprigionare. Ritmo non è un'entità astratta, ritmo è la vita stessa. Ritmo agisce e provoca, è la forza che unisce linguaggio, musica e movimento.* (Carl Orff)
 
+\vspace{.5cm}
 
 <!-- **Maestri:** 
 

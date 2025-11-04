@@ -5,8 +5,14 @@ Ogni anno intendiamo consolidare l'approccio intrapreso, personalizzando il meto
 
 
 **Obiettivi specifici:**    
-- Sviluppare la capacità di ascolto attivo e l'invenzione sonora  
-- Potenziare la coordinazione motoria attraverso l'esperienza musicale  
-- Favorire l'esplorazione tattile ed uditiva utilizzando diversi materiali  
+
+- Sviluppare la capacità di ascolto attivo e l'invenzione sonora
+  
+- Potenziare la coordinazione motoria attraverso l'esperienza musicale
+  
+- Favorire l'esplorazione tattile ed uditiva utilizzando diversi materiali
+  
 - Promuovere la collaborazione e la condivisione di spazi e tempi
-- Stimolare la creatività nella costruzione di oggetti sonori  
+  
+- Stimolare la creatività nella costruzione di oggetti sonori
+  

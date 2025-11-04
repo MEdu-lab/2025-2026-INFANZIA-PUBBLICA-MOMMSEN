@@ -5,7 +5,7 @@ La **dimensione del gioco** costituisce il canale privilegiato per entrare in co
 Le attività vengono progettate attorno a *scoperte sonore*. In questo stadio, il nostro ruolo è ispirato al metodo Montessori e consiste nel fornire al bambino oggetti sonori, dei lavori preparati con i quali i bambini si interfacciano individualmente.
 Parallelamente progettiamo le pratiche collettive tenendo conto delle esigenze emerse per facilitare l'inclusività di tutti i partecipanti.
 
-Le attività si articolano su tre dimensioni:
+**Le attività si articolano su tre dimensioni:**
 
 - *Esplorazione sonora e corporea*: utilizzo di oggetti quotidiani, scoperta delle sonorità del corpo (body percussion) e uso di strumenti semplici e sicuri.
 
@@ -14,7 +14,7 @@ Le attività si articolano su tre dimensioni:
 - *Ascolto attivo e dimensione collettiva*: improvvisazione in piccoli gruppi, giochi di direzione d'orchestra e attività focalizzate sul silenzio e l'ascolto dell'ambiente.
 
 
-**Non sono previsti supporti tecnologici o allestimenti per la diffusione di musica preregistrata**, privilegiando le dimensioni educative della manualità e della partecipazione.
+*Non* sono previsti **supporti tecnologici o allestimenti per la diffusione di musica preregistrata**, privilegiando le dimensioni educative della manualità e della partecipazione.
 
 La filosofia del progetto prevede l'utilizzo creativo di materiali semplici e accessibili, trasformando l'ambiente e gli oggetti in opportunità di scoperta musicale. 
 
